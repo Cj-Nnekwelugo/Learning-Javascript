@@ -32,3 +32,28 @@ function StudentsInfor(name, age, email){
 
     StudentsInfor("Peter", 21, "peter@gmail.com");
     StudentsInfor("John", 19, "John@gmail.com");
+
+    // parameters with return values
+
+    function getbirthYear(year, age) {
+        let born = year - age;
+        return born;
+
+    };
+
+    let result = getbirthYear(2026, 20 );
+    console.log(result);
+
+
+
+
+    function user(name, age, ocupation){
+         return{
+            name,
+            age,
+            ocupation
+         }
+    };
+    const userData = user("chinedu", 23, "farmer");
+
+    console.log(userData);
