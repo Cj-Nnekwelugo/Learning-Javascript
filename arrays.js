@@ -51,3 +51,26 @@ console.log(workers);
 // 3. Unshift Method to add in the front
 workers.unshift("mariam", "pascal");
 console.log(workers);
+
+// 4 shift to remove the first element
+workers.shift();
+console.log(workers);
+
+// 5. Concat Method
+const roles = ["devops", "frontend", "backend"];
+const workersAndRoles = workers.concat(roles);
+console.log(workersAndRoles);
+
+// 6. Join Method
+// [ 'pascal', 'john', 'sax', 'emma', 'andy' ]
+// pascal, john, sax, emma, andy
+console.log(workers.join(", "));
+
+
+// 7. Slice Method
+const cars = ["toyota", "benz", "lexus", "ford", "bmw", "chevrolet"];
+console.log(cars.slice(2));
+console.log(cars.slice(4));
+const carResult = cars.slice(4, 5);
+console.log(cars);
+console.log(carResult);
