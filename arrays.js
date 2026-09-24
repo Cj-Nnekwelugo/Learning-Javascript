@@ -33,3 +33,21 @@ const hobbies = ["reading", "dancing", "coding", "travelling"];
 for (let index = 0; index < hobbies.length; index++) {
     console.log(hobbies[index]);
 }
+
+
+// array methods
+
+const workers = ["obi", "obinna", "chinedu", "okeke"];
+
+// 1 push method to add
+workers.push("maxwell", "peter");
+console.log(workers);
+
+// 2. Pop Method to remove the last 
+workers.pop();
+workers.pop();
+console.log(workers);
+
+// 3. Unshift Method to add in the front
+workers.unshift("mariam", "pascal");
+console.log(workers);
