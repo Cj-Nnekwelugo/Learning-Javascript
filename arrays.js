@@ -25,3 +25,11 @@ console.log(furits.length);
 
     console.log(getAnyRandomColor(colors));
 
+// Arrays and Loops
+
+const hobbies = ["reading", "dancing", "coding", "travelling"];
+
+// Using for loop
+for (let index = 0; index < hobbies.length; index++) {
+    console.log(hobbies[index]);
+}
