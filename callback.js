@@ -10,4 +10,21 @@ runSomething(function() {
  //   console.log("Hello!");
 // }
 
+// Example of callback functions
+function calculateTotal(price, taxRate) {
+    return price + (price * taxRate);
+}
+
+function processOrder(cb, itemName, price) {
+    const totalAmountPaid = cb(price, 0.1);
+
+    console.log("Receipt of payment");
+    console.log(`Item: ${itemName}`);
+    console.log(`Total price: ${totalAmountPaid}`);
+}
+
+processOrder(calculateTotal, "Laptop", 980000);
+
+// callback using arrow function
+
 
