@@ -25,6 +25,14 @@ function processOrder(cb, itemName, price) {
 
 processOrder(calculateTotal, "Laptop", 980000);
 
+
+
+// Uses of Callback functions
+
+// Flexibility
+// They can be used to handle asynchronous waiting
+// They play a key role in event handling
+
 // callback using arrow function
 
 
