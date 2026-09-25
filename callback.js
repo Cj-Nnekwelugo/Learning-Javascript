@@ -34,5 +34,11 @@ processOrder(calculateTotal, "Laptop", 980000);
 // They play a key role in event handling
 
 // callback using arrow function
+function runSomething(callback) {
+    callback();
+}
 
+runSomething(() => {
+    console.log("Hello!");
+});
 
