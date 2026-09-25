@@ -51,3 +51,13 @@ users.forEach((users, index) => {
         `${index + 1}. My name is ${users.name}, I am ${users.age} years old. I am a ${users.occupation}.`
     );
 });
+
+
+// for map method
+
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((number) => {
+    return number * 2;
+});
+
+console.log(doubled);
