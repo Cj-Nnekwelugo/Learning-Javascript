@@ -61,3 +61,13 @@ const doubled = numbers.map((number) => {
 });
 
 console.log(doubled);
+
+// 2nd example
+
+const names = ["obi", "chinedu", "amaka"];
+
+const upperNames = names.map((name) => {
+    return name.toUpperCase();
+});
+
+console.log(upperNames);
