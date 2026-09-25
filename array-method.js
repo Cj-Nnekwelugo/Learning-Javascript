@@ -83,3 +83,25 @@ const evenNumbers = numbers1.filter((number) => {
 });
 
 console.log(evenNumbers);
+
+
+const users1 = [
+    {
+        name: "Obinna",
+        age: 17
+    },
+    {
+        name: "Chinedu",
+        age: 25
+    },
+    {
+        name: "Amaka",
+        age: 20
+    }
+];
+
+const adults = users1.filter((users1) => {
+    return users1.age >= 18;
+});
+
+console.log(adults);
