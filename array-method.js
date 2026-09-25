@@ -105,3 +105,13 @@ const adults = users1.filter((users1) => {
 });
 
 console.log(adults);
+
+// reduce method
+
+const numbers2 = [10, 20, 30, 40];
+
+const total = numbers2.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(total);
