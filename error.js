@@ -17,3 +17,7 @@ try {
     console.log(error.message);
     // console.log(error.stack);
 }
+
+console.log("Learning JavaScript");
+console.log("Other codes...");
+console.log("Other codes running...");
