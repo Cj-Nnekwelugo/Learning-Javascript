@@ -9,7 +9,7 @@
 
 
 // ============ Creating a promise using a variable ============ 
-const users = null;
+const users = ["John", "Mary", "David"];
 
 const getUsersData = new Promise((resolve, reject) => {
     if (!users) {
