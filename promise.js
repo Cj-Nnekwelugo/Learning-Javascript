@@ -28,3 +28,25 @@ getUsersData
     .then(result => console.log(result))
     .catch(error => console.log(error));
 
+
+
+
+// Creating a promise using a function
+
+function doMultiply() {
+    return new Promise((resolve, reject) => {
+        const isMathStudent = true;
+
+        if (isMathStudent) {
+            resolve(60);
+        } else {
+            reject(0);
+        }
+    });
+}
+
+doMultiply()
+    .then(result => result)
+    .then(num => num * 3)
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
