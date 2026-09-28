@@ -50,3 +50,18 @@ doMultiply()
     .then(num => num * 3)
     .then(data => console.log(data))
     .catch(err => console.log(err));
+
+
+    // Async and await
+async function getLuckyNumber() {
+    return 5;
+}
+
+// console.log(getLuckyNumber());
+
+const getLuckyNumberResult = async () => {
+    const result = await getLuckyNumber();
+    console.log(result);
+}
+
+getLuckyNumberResult();
