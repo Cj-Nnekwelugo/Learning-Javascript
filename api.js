@@ -19,3 +19,28 @@ async function getAllUsers() {
 }
 
  getAllUsers()
+
+
+ // POST REQUEST
+const createNewPost = async () => {
+    const newPost = {
+        title: "Learning APIs",
+        userId: 55,
+        content: "APIs allow two systems to communicate",
+    }
+    try {
+        const response = await fetch("https://dummyjson.com/posts/add", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newPost)
+        });
+        const data = await response.json();
+        console.log(data);
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+createNewPost();
